@@ -1,0 +1,39 @@
+/* King of Floors - typography.
+   Display: Schibsted Grotesk (700/800, tight tracking) - premium editorial.
+   Body/UI: Hanken Grotesk (400-600, lh ~1.6).
+   Eyebrows: Hanken Grotesk uppercase, wide tracking (no mono - keeps it luxe). */
+:root {
+  --font-display: 'Schibsted Grotesk', 'Hanken Grotesk', system-ui, sans-serif;
+  --font-body:    'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+
+  /* Weights */
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold:600;
+  --fw-bold:    700;
+  --fw-black:   800;
+
+  /* Responsive scale (clamp) */
+  --fs-display: clamp(3rem, 1.6rem + 5.2vw, 5.75rem);   /* hero */
+  --fs-h1:      clamp(2.4rem, 1.5rem + 3.2vw, 4rem);
+  --fs-h2:      clamp(1.9rem, 1.35rem + 2vw, 2.85rem);
+  --fs-h3:      clamp(1.4rem, 1.15rem + 1vw, 1.85rem);
+  --fs-h4:      clamp(1.15rem, 1.02rem + 0.5vw, 1.35rem);
+  --fs-lead:    clamp(1.1rem, 1.02rem + 0.4vw, 1.3rem);
+  --fs-body:    1.0625rem;   /* 17px */
+  --fs-sm:      0.9375rem;   /* 15px */
+  --fs-xs:      0.8125rem;   /* 13px */
+  --fs-eyebrow: 0.78rem;
+
+  /* Line heights */
+  --lh-tight:   1.04;
+  --lh-snug:    1.18;
+  --lh-normal:  1.45;
+  --lh-body:    1.62;
+
+  /* Tracking */
+  --ls-display: -0.025em;
+  --ls-head:    -0.018em;
+  --ls-body:    0;
+  --ls-eyebrow: 0.18em;
+}

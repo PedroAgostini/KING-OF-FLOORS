@@ -1,0 +1,11 @@
+/* King of Floors - layout helpers + z-index scale. */
+:root {
+  --z-base:    0;
+  --z-raised:  10;
+  --z-sticky:  100;
+  --z-overlay: 1000;
+  --z-modal:   1100;
+  --z-toast:   1200;
+
+  --header-h:  76px;
+}

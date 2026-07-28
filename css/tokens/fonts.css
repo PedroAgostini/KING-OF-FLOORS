@@ -1,0 +1,8 @@
+/* King of Floors - webfonts.
+   SUBSTITUTION: no brand font files were provided. The logo lettering is a
+   custom retro script (used only inside the logo artwork). For UI we pair two
+   premium grotesques from Google Fonts:
+     - Schibsted Grotesk : display / headlines (modern, editorial, premium)
+     - Hanken Grotesk    : body + UI (warm, highly readable)
+   Flag to owner: send official font files if any exist for self-hosting. */
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap');

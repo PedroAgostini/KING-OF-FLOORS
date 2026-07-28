@@ -1,0 +1,24 @@
+/* King of Floors - radii, borders, shadows.
+   Luxe = restrained radii, hairline warm borders, soft low shadows. */
+:root {
+  --r-xs:   4px;
+  --r-sm:   8px;
+  --r-md:   12px;
+  --r-lg:   18px;
+  --r-xl:   26px;
+  --r-full: 999px;
+
+  --bw:      1px;
+  --bw-2:    1.5px;
+
+  /* Warm, low, upscale shadows */
+  --shadow-xs: 0 1px 2px rgba(40,30,20,0.05);
+  --shadow-sm: 0 2px 8px rgba(40,30,20,0.06);
+  --shadow-md: 0 10px 28px rgba(40,30,20,0.08);
+  --shadow-lg: 0 26px 64px rgba(40,30,20,0.12);
+  --shadow-accent: 0 14px 34px rgba(168,35,28,0.26);
+  --shadow-blue: var(--shadow-accent); /* deprecated alias */
+  --shadow-inset: inset 0 0 0 1px rgba(28,24,21,0.05);
+
+  --blur-overlay: 14px;
+}

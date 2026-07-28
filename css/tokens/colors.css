@@ -1,0 +1,97 @@
+/* King of Floors - color system.
+   Warm-editorial, light-first. Owner-directed palette:
+     FOREST #02290A  - brand dark green: dark grounds, headings on light, accents
+     RED             - all primary buttons / CTAs
+     BRASS / OAK     - luxe flourish (rules, signature service, accents on dark)
+   The former sky-blue (#4C9CBE) is retired and must not be used. */
+:root {
+  /* ---- Warm neutrals: paper & surfaces ---- */
+  --paper:        #FBF8F2;  /* page background - warm ivory */
+  --paper-sand:   #F3ECDF;  /* alternating section - warm sand */
+  --paper-deep:   #ECE3D3;  /* deepest warm band */
+  --surface:      #FFFFFF;  /* cards on paper */
+  --surface-warm: #F8F2E8;  /* warm card / tile */
+
+  /* ---- Ink: warm near-blacks & grays ---- */
+  --ink:      #1C1815;  /* primary text */
+  --ink-2:    #4A423A;  /* secondary text */
+  --ink-3:    #857B70;  /* muted / captions */
+  --ink-4:    #A79C8D;  /* disabled / faint */
+
+  /* ---- Brand forest green (owner-specified #02290A) ---- */
+  --forest:       #02290A;  /* brand dark green - dark grounds, strong accents */
+  --forest-deep:  #011C07;  /* deeper still - gradient end, pressed */
+  --forest-mid:   #17512A;  /* readable green for icons/links on light */
+  --forest-light: #7FA98C;  /* muted green for text on dark grounds */
+  --forest-soft:  #E4EBE3;  /* tint background */
+  --forest-line:  #C2D2C3;  /* tint border */
+
+  /* ---- Action red (all primary CTAs) ---- */
+  --red:       #A8231C;
+  --red-deep:  #86160F;  /* hover / pressed */
+  --red-soft:  #F7E4E1;  /* tint background */
+  --red-line:  #E8C3BE;  /* tint border */
+
+  /* ---- Brass / oak (luxe accent - warmth + range) ---- */
+  --brass:      #B0895A;
+  --brass-deep: #8C6A3E;
+  --oak:        #C9A87C;  /* accent on dark grounds */
+  --brass-soft: #EFE3D0;
+  --brass-line: #DCC9A8;
+
+  /* ---- Lines / hairlines ---- */
+  --line:      #E7DDCB;
+  --line-2:    #D6C9B1;
+  --line-ink:  rgba(28,24,21,0.12);
+
+  /* ---- Functional (oklch, uniform luminosity, warm-tuned) ---- */
+  --ok:    oklch(0.62 0.12 150);
+  --ok-bg: oklch(0.95 0.03 150);
+  --warn:  oklch(0.72 0.13 75);
+  --warn-bg: oklch(0.95 0.04 75);
+  --error: #A8231C;
+  --error-bg: var(--red-soft);
+  --info:  var(--forest-mid);
+  --info-bg: var(--forest-soft);
+
+  /* ---- Semantic aliases ---- */
+  --bg-page:        var(--paper);
+  --bg-alt:         var(--paper-sand);
+  --surface-card:   var(--surface);
+  --text-strong:    var(--ink);
+  --text-body:      var(--ink-2);
+  --text-muted:     var(--ink-3);
+  --accent:         var(--forest);
+  --accent-hover:   var(--forest-mid);
+  --accent-2:       var(--brass);
+  --action:         var(--red);
+  --action-hover:   var(--red-deep);
+  --border-subtle:  var(--line);
+  --border-strong:  var(--line-2);
+  --focus-ring:     var(--forest-mid);
+
+  /* ---- Deprecated blue aliases - remapped to forest. Do not use. ---- */
+  --blue:      var(--forest);
+  --blue-deep: var(--forest-mid);
+  --blue-ink:  var(--forest);
+  --blue-soft: var(--forest-soft);
+  --blue-line: var(--forest-line);
+
+  /* ---- Gradients (used sparingly) ---- */
+  --grad-warm:   linear-gradient(180deg, #FBF8F2 0%, #F3ECDF 100%);
+  --grad-brass:  linear-gradient(90deg, #C9A87C 0%, #B0895A 60%, #8C6A3E 100%);
+  --grad-forest: linear-gradient(180deg, #043810 0%, #02290A 55%, #011C07 100%);
+  --grad-ink:    var(--grad-forest);
+}
+
+/* Dark editorial band / footer - forest ground */
+[data-theme="ink"] {
+  --bg-page:      #02290A;
+  --bg-alt:       #043810;
+  --surface-card: #043810;
+  --text-strong:  #F7F1E6;
+  --text-body:    #C9D6C9;
+  --text-muted:   #8AA08D;
+  --border-subtle: rgba(247,241,230,0.14);
+  --border-strong: rgba(247,241,230,0.22);
+}

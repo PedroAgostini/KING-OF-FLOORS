@@ -1,0 +1,16 @@
+/* King of Floors - motion. Calm, no bounce. transform/opacity only. */
+:root {
+  --dur-fast:  160ms;
+  --dur-base:  240ms;
+  --dur-slow:  420ms;
+  --dur-xslow: 640ms;
+
+  --ease-out:  cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --lift:      translateY(-3px);
+  --press:     translateY(1px);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-base: 0ms; --dur-slow: 0ms; --dur-xslow: 0ms; }
+}

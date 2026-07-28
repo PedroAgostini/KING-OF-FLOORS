@@ -1,0 +1,27 @@
+/* King of Floors - spacing (4px base) + containers. */
+:root {
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-8:  32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+  --s-24: 96px;
+  --s-32: 128px;
+  --s-40: 160px;
+
+  /* Vertical section rhythm */
+  --section-y:      clamp(64px, 5vw + 40px, 128px);
+  --section-y-lg:   clamp(88px, 7vw + 48px, 160px);
+
+  /* Containers */
+  --container:      1240px;
+  --container-wide: 1440px;
+  --container-text: 720px;
+  --gutter:         clamp(20px, 4vw, 56px);
+}
