@@ -11,7 +11,7 @@
 <body>
 
 <!-- ============ HERO ============ -->
-<section class="hero" id="top">
+<section class="hero hero--split" id="top">
   <div class="hero__photo hero__slider kb" aria-hidden="true">
     <div class="hero__slide" style="background-image:url('assets/wp/hero-banner-1.webp')"></div>
     <div class="hero__slide" style="background-image:url('assets/wp/hero-banner-2.webp')"></div>
@@ -23,14 +23,15 @@
   <div class="hero__curve2"></div>
   <div class="hero__veil veil"></div>
 
-  <!-- floating pill header -->
+  <!-- floating header -->
   <header class="hdr-float">
     <div class="hdr-float__pill">
       <a class="brand" href="#top">
-        <img src="assets/mascot-badge.webp" alt="King of Floors">
+        <img src="assets/logo-primary.webp" alt="King of Floors">
         <span>King of Floors</span>
       </a>
       <nav class="nav hide-nav">
+        <a href="#top">Home</a>
         <div class="nav__item" data-services-menu>
           <button class="nav__trigger" type="button" aria-expanded="false">Services <i data-lucide="chevron-down"></i></button>
           <div class="nav__menu">
@@ -46,35 +47,63 @@
             <a href="#services">Basement flooring</a>
           </div>
         </div>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#faq">FAQ</a>
+        <a href="#about">About us</a>
+        <a href="#hero-estimate">Contact us</a>
       </nav>
-      <div class="hdr-actions">
-        <a class="hdr-phone hide-nav" href="tel:+14708361290"><i data-lucide="phone" style="color:var(--forest-mid)"></i> (470) 836-1290</a>
-        <a class="btn btn--primary" href="#estimate">Free estimate</a>
-      </div>
     </div>
   </header>
 
-  <div class="container hero__body">
-    <span class="hero__eyebrow hero-el" style="animation-delay:.25s">The Flooring North Atlanta Trusts</span>
-    <h1 class="hero-el" style="animation-delay:.35s">Floors Fit For A King.</h1>
-    <p class="hero__lead hero-el" style="animation-delay:.5s">Whether you're upgrading for your family or preparing to sell, King of Floors installs premium LVP, hardwood, and laminate flooring that transforms a house into a showpiece. Licensed, insured, guaranteed.</p>
-    <div class="hero__cta hero-el" style="animation-delay:.65s">
-      <a class="btn btn--accent btn--lg btn--hero" href="#estimate">Start My Free Estimate</a>
-      <a class="btn btn--lg btn--outline-light" href="#portfolio">View Our Work</a>
+  <div class="hero__layout">
+    <div class="hero__body">
+      <span class="hero__eyebrow hero-el" style="animation-delay:.25s">The flooring North Atlanta trusts</span>
+      <h1 class="hero-el" style="animation-delay:.35s">FLOORS FIT FOR A KING</h1>
+      <p class="hero__lead hero-el" style="animation-delay:.5s">Premium LVP, hardwood, and laminate installation for homes that need durable floors, clean lines, and craftsmanship that lasts.</p>
+      <div class="hero__cta hero-el" style="animation-delay:.65s">
+        <a class="btn btn--accent btn--lg btn--hero" href="tel:+14708361290"><i data-lucide="phone"></i> Call us now</a>
+      </div>
     </div>
-  </div>
 
-  <div class="hero__trust">
-    <div class="hero-el" style="animation-delay:.8s;display:flex;flex-wrap:wrap;gap:12px 34px;justify-content:center">
-      <span><i data-lucide="star"></i> Top-Rated on Thumbtack</span>
-      <span><i data-lucide="truck"></i> Furniture Moving Included</span>
-      <span><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span><i data-lucide="award"></i> 1-Year Warranty on Every Install</span>
-    </div>
+    <aside class="hero-estimate" id="hero-estimate" aria-label="Start your flooring project">
+      <h2>Start your new project!</h2>
+      <form class="hero-form" data-estimate-form novalidate>
+        <div class="picker">
+          <label class="picker__label" for="hero-service">Select Required Service</label>
+          <div class="dselect">
+            <select class="dfield" id="hero-service" name="service" required>
+              <option value="" disabled selected>--</option>
+              <option>Vinyl plank installation (LVP)</option>
+              <option>Hardwood installation</option>
+              <option>Laminate installation</option>
+              <option>Engineered wood</option>
+              <option>Sanding &amp; refinishing</option>
+              <option>Staircase remodeling</option>
+              <option>3D acoustic wood panels</option>
+              <option>Not sure yet, help me choose</option>
+            </select>
+            <i data-lucide="chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="dform">
+          <input class="dfield" name="first" placeholder="First name" autocomplete="given-name" required>
+          <input class="dfield" name="last" placeholder="Last name" autocomplete="family-name" required>
+          <input class="dfield" name="email" type="email" placeholder="Email" autocomplete="email">
+          <input class="dfield" name="phone" type="tel" placeholder="Phone" autocomplete="tel" required>
+          <input class="dfield col-2" name="address" placeholder="Address" autocomplete="street-address">
+          <textarea class="dfield col-2" name="details" rows="5" placeholder="Message"></textarea>
+          <div class="col-2 dform__submit">
+            <button class="btn btn--accent btn--lg" type="submit">Send</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="dform-done" hidden>
+        <div class="dform-done__ico">✓</div>
+        <h3>You're all set.</h3>
+        <p>Thanks. We'll follow up with your custom quote within 24 hours.</p>
+        <a href="tel:+14708361290"><i data-lucide="phone"></i> Or call now: (470) 836-1290</a>
+      </div>
+    </aside>
   </div>
 </section>
 
